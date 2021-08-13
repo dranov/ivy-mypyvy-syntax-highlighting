@@ -1,7 +1,8 @@
 # Ivy & mypyvy Syntax Highlighting
 
 Provides basic syntax highlighting for Ivy (`.ivy` extension) and mypyvy source
-files (`.pyv` extension). This is what the highlighting looks like:
+files (`.pyv` extension) in Visual Studio Code. This is what the highlighting
+looks like:
 
 Ivy:
 ![Ivy syntax highlighting](images/syntax-ivy.png)
