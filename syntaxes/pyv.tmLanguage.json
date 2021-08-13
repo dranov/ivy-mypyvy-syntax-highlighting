@@ -1,0 +1,41 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mypyvy",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.pyv",
+				"match": "\\b(modifies|sort|mutable|immutable|derived|relation|constant|function|init|transition|invariant|sketch|axiom|new|forall|exists|true|false|zerostate|onestate|twostate|theorem|definition|assert|safety|any|trace|if|then|else|let|in|sat|unsat|distinct|bool|int)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.pyv",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pyv",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.pyv",
+				"match": "(#).*$\\n?"
+			}]
+		}
+	},
+	"scopeName": "source.pyv"
+}

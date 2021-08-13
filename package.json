@@ -1,0 +1,25 @@
+{
+    "name": "mypyvy-syntax-highlighting",
+    "displayName": "Mypyvy Syntax Highlighting",
+    "description": "Syntax highlighting for mypyvy",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pyv",
+            "aliases": ["mypyvy", "pyv"],
+            "extensions": ["pyv"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pyv",
+            "scopeName": "source.pyv",
+            "path": "./syntaxes/pyv.tmLanguage.json"
+        }]
+    }
+}
