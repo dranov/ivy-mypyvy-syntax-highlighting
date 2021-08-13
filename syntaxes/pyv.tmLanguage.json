@@ -21,7 +21,7 @@
 			},
 			{
 				"comment": "https://github.com/wilcoxjay/mypyvy/blob/master/src/parser.py#L93",
-				"match": "\\s*(!|~|\\->|<\\->|\\||=|!=|~=|>=|>|<=|<|\\+|\\-|\\&)",
+				"match": "\\s*(!|~|\\->|<\\->|\\||=|!=|~=|>=|>|<=|<|\\+|\\-|\\&|\\*)",
 				"captures": {
 				  "1": { "name": "keyword.operator.pyv" }
 				}
