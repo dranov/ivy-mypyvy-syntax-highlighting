@@ -1,0 +1,42 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ivy",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.ivy",
+				"comment": "https://github.com/kenmcmil/ivy/blob/master/ivy/ivy_lexer.py",
+				"match": "\\b(relation|individual|function|axiom|conjecture|schema|instantiate|instance|derived|concept|init|action|method|state|assume|assert|set|null|old|from|update|params|in|match|ensures|requires|modifies|true|false|fresh|module|object|class|type|if|else|local|let|call|entry|macro|interpret|forall|exists|returns|mixin|execute|before|after|isolate|with|export|delegate|import|using|include|progress|rely|mixord|extract|destructor|some|maximizing|minimizing|private|implement|property|while|invariant|struct|definition|ghost|alias|trusted|this|var|attribute|variant|of|scenario|proof|named|fresh|temporal|globally|eventually|decreases|specification|implementation|ensure|require|around|parameter|apply|theorem|showgoals|defergoal|spoil|explicit|thunk|isa|autoinstance|constructor|finite|tactic|unfold|forget)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.ivy",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ivy",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.ivy",
+				"match": "(#).*$\\n?"
+			}]
+		}
+	},
+	"scopeName": "source.ivy"
+}

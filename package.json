@@ -15,16 +15,40 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "pyv",
-            "aliases": ["mypyvy", "pyv"],
-            "extensions": ["pyv"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "pyv",
-            "scopeName": "source.pyv",
-            "path": "./syntaxes/pyv.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "pyv",
+                "aliases": [
+                    "mypyvy",
+                    "pyv"
+                ],
+                "extensions": [
+                    "pyv"
+                ],
+                "configuration": "./mypyvy-language-configuration.json"
+            },
+            {
+                "id": "ivy",
+                "aliases": [
+                    "ivy"
+                ],
+                "extensions": [
+                    "ivy"
+                ],
+                "configuration": "./ivy-language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "pyv",
+                "scopeName": "source.pyv",
+                "path": "./syntaxes/pyv.tmLanguage.json"
+            },
+            {
+                "language": "ivy",
+                "scopeName": "source.ivy",
+                "path": "./syntaxes/ivy.tmLanguage.json"
+            }
+        ]
     }
 }

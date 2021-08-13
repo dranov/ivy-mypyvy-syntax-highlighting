@@ -1,9 +1,13 @@
-# mypyvy-syntax-highlighting README
+# Ivy & mypyvy Syntax Highlighting
 
-Provides basic syntax highlighting for mypyvy source files (`.pyv` extension).
-This is what the highlighting looks like:
+Provides basic syntax highlighting for Ivy (`.ivy` extension) and mypyvy source
+files (`.pyv` extension). This is what the highlighting looks like:
 
-![Syntax highlighting](images/syntax-screenshot.png)
+Ivy:
+![Ivy syntax highlighting](images/syntax-ivy.png)
+
+mypyvy:
+![Mypyvy syntax highlighting](images/syntax-mypyvy.png)
 
 ## Development
 
