@@ -1,12 +1,12 @@
 {
-    "name": "mypyvy-syntax-highlighting",
+    "name": "ivy-mypyvy-syntax-highlighting",
     "publisher": "dranov",
     "repository": {
         "type": "git",
-        "url": "https://github.com/dranov/mypyvy-syntax-highlighting.git"
+        "url": "https://github.com/dranov/ivy-mypyvy-syntax-highlighting.git"
     },
-    "displayName": "Mypyvy Syntax Highlighting",
-    "description": "Syntax highlighting for mypyvy",
+    "displayName": "Ivy & mypyvy Syntax Highlighting",
+    "description": "Syntax highlighting for Ivy & mypyvy files",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.59.0"
