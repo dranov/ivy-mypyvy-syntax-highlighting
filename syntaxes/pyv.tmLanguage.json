@@ -18,7 +18,14 @@
 				"name": "keyword.pyv",
 				"comment": "https://github.com/wilcoxjay/mypyvy/blob/master/src/parser.py",
 				"match": "\\b(modifies|sort|mutable|immutable|derived|relation|constant|function|init|transition|invariant|sketch|axiom|new|forall|exists|true|false|zerostate|onestate|twostate|theorem|definition|assert|safety|any|trace|if|then|else|let|in|sat|unsat|distinct|bool|int)\\b"
-			}]
+			},
+			{
+				"comment": "https://github.com/wilcoxjay/mypyvy/blob/master/src/parser.py#L93",
+				"match": "\\s*(!|~|\\->|<\\->|\\||=|!=|~=|>=|>|<=|<|\\+|\\-|\\&)",
+				"captures": {
+				  "1": { "name": "keyword.operator.pyv" }
+				}
+			  }]
 		},
 		"strings": {
 			"name": "string.quoted.double.pyv",
