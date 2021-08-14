@@ -23,6 +23,10 @@ vsce package
 
 ## Release Notes
 
+## 2021-08-14
+
+- Added operator highlighting.
+
 ### 2021-08-13
 
 - Initial release. Highlights keywords and comments. You can also
